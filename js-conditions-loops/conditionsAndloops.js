@@ -1,5 +1,5 @@
 // First task
-console.log("First task")
+console.log("First task");
 
 const yearsOfExperience = 5;
 
@@ -27,7 +27,7 @@ console.log("Salary: " + salary);
 console.log("Bonus: " + bonus);
 
 // Second task
-console.log("Second task")
+console.log("Second task");
 
 const month = 1; 
 
@@ -74,9 +74,9 @@ switch (month) {
 }
 
 // Third task
-console.log("Third task")
+console.log("Third task");
 
-const number = 30
+const number = 30;
 
 for (let i = 0; i <= number; i++) {
     if (i % 2 === 0 && i !== 0 && i !== 22) {
@@ -85,16 +85,16 @@ for (let i = 0; i <= number; i++) {
 }
 
 //Fourth task
-console.log("Fourth task")
+console.log("Fourth task");
 
 const numberA = 22; 
 const numberB = 41;
 
-const biggerNumber = (numberA > numberB) ? numberA : numberB
+const biggerNumber = (numberA > numberB) ? numberA : numberB ;
 console.log("Bigger number: " + biggerNumber);
 
 //Fifth task
-console.log("Fifth task")
+console.log("Fifth task");
 
 let text = "Javascript is fun";
 let i = 0;
