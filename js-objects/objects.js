@@ -39,7 +39,7 @@ movie.genre = "Action thriller";
 movie.title = "John Wick";
 
 movie.actors = { mainRole: "Keanu Reeves", secondRole: "Michael Nyqvist" };
-movie.director = "	Chad Stahelski";
+movie.director = "Chad Stahelski";
   
 delete movie.title;
 console.log(movie);
