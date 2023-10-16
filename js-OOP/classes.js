@@ -42,11 +42,12 @@ hat.purchase(7);
 console.log("Task №4");
 
 class CarClass {
+    #speed
     constructor(make, model, year) {
         this.make = make;
         this.model = model;
         this.year = year;
-        this.speed = 0;
+        this.#speed = 0;
     }
 
     accelerate(speed) {
@@ -67,17 +68,18 @@ class CarClass {
 }
 
 class AudiClass extends CarClass {
+    #color
     constructor(make, model, year, color) {
         super(make, model, year);
-        this._color = color;
+        this.#color = color;
     }
 
     get color() {
-        return this._color;
+        return this.#color;
     }
 
     set color(newColor) {
-        this._color = newColor;
+        this.#color = newColor;
     }
 
     myCurrentColor() {
