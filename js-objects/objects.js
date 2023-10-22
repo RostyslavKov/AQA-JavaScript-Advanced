@@ -1,50 +1,50 @@
 //Task №1
-console.log("Task №1")
+console.log("Task №1");
 
-const automationQA = {}
+const automationQA = {};
 
-automationQA.programmerName = "John"
-automationQA.programmingLanguages = "JavaScript"
-automationQA.age = 27
-automationQA.languages = ["Ukrainian", "English"]
+automationQA.programmerName = "John";
+automationQA.programmingLanguages = "JavaScript";
+automationQA.age = 27;
+automationQA.languages = ["Ukrainian", "English"];
 automationQA.preferences = {
 	basicPreferences: "table",
-}
+};
 
-console.log(automationQA)
+console.log(automationQA);
 
 //Task №2
-console.log("Task №2")
+console.log("Task №2");
 
 const room = {
 	name: "Living Room",
 	size: 12,
 	window: true,
-}
+};
 
-console.log("Room: " + room.name)
-console.log("Window: " + room.window)
+console.log("Room: " + room.name);
+console.log("Window: " + room.window);
 
 //Task №3
-console.log("Task №3")
+console.log("Task №3");
 
 const movie = {
 	title: "Interstellar",
 	releaseYear: 2014,
 	genre: "Science fiction",
-}
+};
 
-movie.genre = "Action thriller"
-movie.title = "John Wick"
+movie.genre = "Action thriller";
+movie.title = "John Wick";
 
-movie.actors = { mainRole: "Keanu Reeves", secondRole: "Michael Nyqvist" }
-movie.director = "Chad Stahelski"
+movie.actors = { mainRole: "Keanu Reeves", secondRole: "Michael Nyqvist" };
+movie.director = "Chad Stahelski";
 
-delete movie.title
-console.log(movie)
+delete movie.title;
+console.log(movie);
 
 //Task №4
-console.log("Task №4")
+console.log("Task №4");
 
 const englishBooks = [
 	{
@@ -62,26 +62,26 @@ const englishBooks = [
 		author: "F. Scott Fitzgerald",
 		year: 1925,
 	},
-]
+];
 
 for (let i = 0; i < englishBooks.length; i++) {
-	const book = englishBooks[i]
+	const book = englishBooks[i];
 
 	if (book.title === "The Great Gatsby") {
-		continue
+		continue;
 	}
 	if (book.year > 1940) {
-		console.log(`Title: ${book.title}, Year: ${book.year}`)
+		console.log(`Title: ${book.title}, Year: ${book.year}`);
 	}
 	if (book.author === "George Orwell") {
-		book.author = "John Wick"
+		book.author = "John Wick";
 	}
 }
 
-console.log(englishBooks)
+console.log(englishBooks);
 
 //Task №5
-console.log("Task №5")
+console.log("Task №5");
 
 const userObject = {
 	programmerName: "John",
@@ -92,21 +92,21 @@ const userObject = {
 		basicPreferences: "table",
 		reqiredPreferences: "coffee",
 	},
-}
+};
 
 for (let key in userObject) {
 	if (typeof userObject[key] === "object") {
-		console.log(`${key} - an object inside the object`)
+		console.log(`${key} - an object inside the object`);
 		for (let innerKey in userObject[key]) {
-			console.log(`  ${innerKey}: ${userObject[key][innerKey]}`)
+			console.log(`  ${innerKey}: ${userObject[key][innerKey]}`);
 		}
 	} else {
-		console.log(`${key} - ${userObject[key]}`)
+		console.log(`${key} - ${userObject[key]}`);
 	}
 }
 
 //Task №6
-console.log("Task №6")
+console.log("Task №6");
 
 const user = {
 	name: "John",
@@ -116,21 +116,21 @@ const user = {
 		city: "City",
 		postalCode: "42000",
 	},
-}
+};
 
 function getUserInfo({ name, age }) {
-	console.log(`Name: ${name}, Age: ${age}`)
+	console.log(`Name: ${name}, Age: ${age}`);
 }
 function getFullAddress({ email, address: { city, postalCode } }) {
-	console.log(`Email: ${email}, Address: ${city}, ${postalCode}`)
+	console.log(`Email: ${email}, Address: ${city}, ${postalCode}`);
 }
-getUserInfo(user)
-getFullAddress(user)
+getUserInfo(user);
+getFullAddress(user);
 
-console.log("Task №6 - Advanced")
-const getUserInfoAdvanced = ({ name, age }) => `Name: ${name}, Age: ${age}`
+console.log("Task №6 - Advanced");
+const getUserInfoAdvanced = ({ name, age }) => `Name: ${name}, Age: ${age}`;
 const getFullAddressAdvanced = ({ email, address: { city, postalCode } }) =>
-	`Email: ${email}, Address: ${city}, ${postalCode}`
+	`Email: ${email}, Address: ${city}, ${postalCode}`;
 
-console.log(getUserInfoAdvanced(user))
-console.log(getFullAddressAdvanced(user))
+console.log(getUserInfoAdvanced(user));
+console.log(getFullAddressAdvanced(user));
