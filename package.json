@@ -1,11 +1,15 @@
 {
-  "name": "aqa-javascript-advanced",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "node js-variables/variables.js"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "aqa-javascript-advanced",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node js-variables/variables.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint": "^8.52.0",
+		"prettier": "3.0.3"
+	}
 }
